@@ -4,7 +4,7 @@ from keras.models import load_model
 from keras.preprocessing.image import img_to_array
 
 # Load pre-trained model and face detection classifier
-face_detector = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
+face_detector = cv2.CascadeClassifier('./haarcascade_face_default.xml')
 emotion_model = load_model('./Emotion_Detection.h5')
 
 # Define the emotion labels
